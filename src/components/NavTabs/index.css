@@ -1,0 +1,22 @@
+@media (max-width: 580px) {
+  .nav-list-item {
+    margin-top: 20px;
+  }
+}
+
+.navButton {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.selectedNavButton {
+  color: blue !important;
+  border: solid;
+  border-width: 0px 0px 2px 0px;
+}

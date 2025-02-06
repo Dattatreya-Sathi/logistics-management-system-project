@@ -1,0 +1,42 @@
+.table-header {
+  border: solid grey 2px;
+  margin: auto;
+  background: #113871;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.table-columns {
+  border: solid grey 2px;
+  margin-right: 10px;
+}
+
+.expanded-details {
+  border-radius: 10px;
+  background-color: #e6f7ff;
+}
+
+.table {
+  font-size: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .table {
+    font-size: 12px;
+  }
+}
+
+.view-details-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+
+.expanded-container {
+  text-align: start;
+}

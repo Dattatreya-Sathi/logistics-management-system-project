@@ -1,0 +1,45 @@
+@media (max-width: 580px) {
+  .nav-list-item {
+    margin-top: 20px;
+  }
+}
+
+.navButton {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: 0;
+}
+
+.sidebarItem {
+  color: inherit !important;
+  border: solid transparent;
+  border-width: 0px 0px 0px 5px;
+}
+.selectedSidebarItem {
+  border: solid seagreen;
+  border-width: 0px 0px 0px 5px;
+}
+
+.sidebarTabContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  width: 90%;
+  padding: 10px;
+  color: #6c757d; /* Default unselected color */
+}
+
+.selectedSidebarContainer {
+  background-color: aqua;
+  border-radius: 15px;
+  color: rgb(15, 107, 228);
+}
+
+.sidebar-tab-logo {
+  margin-right: 10px;
+}
