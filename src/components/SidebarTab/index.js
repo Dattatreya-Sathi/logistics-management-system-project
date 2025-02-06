@@ -1,5 +1,4 @@
-import {Link, useHistory} from 'react-router-dom'
-import {withRouter} from 'react-router-dom'
+import {Link, useHistory, withRouter} from 'react-router-dom'
 import {TbTableFilled} from 'react-icons/tb'
 import './index.css'
 
@@ -25,7 +24,7 @@ const SidebarTab = props => {
           }`}
         >
           <TbTableFilled className="sidebar-tab-logo" />
-          <button className="nav-link" onClick={onClickTab}>
+          <button type="button" className="nav-link" onClick={onClickTab}>
             {displayText}
           </button>
         </div>

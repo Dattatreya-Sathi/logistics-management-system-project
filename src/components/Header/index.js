@@ -1,6 +1,5 @@
 import {v4 as uuidv4} from 'uuid'
-import {useHistory} from 'react-router-dom'
-import {withRouter} from 'react-router-dom'
+import {useHistory, withRouter} from 'react-router-dom'
 import NavTabs from '../NavTabs'
 import './index.css'
 
@@ -12,7 +11,7 @@ const tabButtons = [
 ]
 
 const Header = props => {
-  const {location} = props //It will Access the current path from `location`
+  const {location} = props // It will Access the current path from `location`
   const currentPath = location.pathname
   const history = useHistory()
   const onClickTab = () => {
@@ -29,7 +28,7 @@ const Header = props => {
           aria-controls="offcanvasNavbar"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" />
         </button>
         <div
           className="sidebar offcanvas offcanvas-start"
@@ -38,7 +37,7 @@ const Header = props => {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header border-bottom">
-            <div className="profile-container"></div>
+            <div className="profile-container" />
             <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
               LOGO
             </h5>
@@ -47,7 +46,7 @@ const Header = props => {
               className="btn-close shadow-none"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
-            ></button>
+            />
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
@@ -59,53 +58,52 @@ const Header = props => {
                 />
               ))}
               <li className="nav-item dropdown">
-                <a
+                <button
                   className="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
+                  type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Freight EG
-                </a>
+                </button>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <button className="dropdown-item" type="button">
                       Action
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <button className="dropdown-item" type="button">
                       Another action
-                    </a>
+                    </button>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="#">
+                    <button className="dropdown-item" type="button">
                       Something else here
-                    </a>
+                    </button>
                   </li>
                 </ul>
                 <ul className="nav-sidebar-other-settings-ul">
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <button className="nav-link" type="button">
                       Settings
-                    </a>
+                    </button>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <button className="nav-link" type="button">
                       Profile
-                    </a>
+                    </button>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">
+                    <button className="nav-link" type="button">
                       Contact Us
-                    </a>
+                    </button>
                   </li>
                   <li className="nav-item">
-                    <button className="nav-link" onClick={onClickTab}>
+                    <button type="button" className="nav-link" onClick={onClickTab}>
                       Logout
                     </button>
                   </li>

@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {FaCalendar} from 'react-icons/fa'
-import {BsFillTruckFrontFill} from 'react-icons/bs'
-import {BsFillBoxFill} from 'react-icons/bs'
+import {BsFillTruckFrontFill, BsFillBoxFill} from 'react-icons/bs'
 import {IoPerson} from 'react-icons/io5'
 import {FaPhone} from 'react-icons/fa6'
 import {MdLocationOn} from 'react-icons/md'
@@ -58,13 +57,14 @@ const Table = props => {
                 <td>{bid.materialWeight}</td>
                 <td>
                   {bid.response} <br />
-                  <a href="#">View results</a>
+                  <button>View results</button>
                 </td>
                 <td>
                   {bid.assignedStaff}, {bid.assignedStaffNum}
                 </td>
                 <td>
                   <button
+                  type="button"
                     className="view-details-button"
                     onClick={() => toggleRow(bid.id)}
                   >
@@ -173,7 +173,7 @@ const Table = props => {
                         <strong>Number of Bidders:</strong>{' '}
                         <span className="text-info">{bid.details.bidders}</span>
                         <br />
-                        <span className="text-info">{'View Details'}</span>
+                        <span className="text-info">View Details</span>
                       </div>
                     </div>
                   </td>

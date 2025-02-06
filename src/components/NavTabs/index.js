@@ -8,7 +8,7 @@ const NavTabs = props => {
   return (
     <li className="nav-item">
       <Link to={path} className="link">
-        <button className={`nav-link ${isClicked && 'selectedNavButton'}`}>
+        <button type="button" className={`nav-link ${isClicked && 'selectedNavButton'}`}>
           {displayText}
         </button>
       </Link>

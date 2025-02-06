@@ -256,7 +256,7 @@ const Dashboard = () => {
               </div>
             </div>
             <div className="create-container">
-              <button className="create-button">Create</button>
+              <button type="button" className="create-button">Create</button>
               <BsFillPlusSquareFill />
             </div>
           </div>
@@ -279,7 +279,7 @@ const Dashboard = () => {
                 </select>
               </li>
               <li>
-                <FaFilter color={'#113871'} />
+                <FaFilter color='#113871'/>
               </li>
             </ul>
           </div>
